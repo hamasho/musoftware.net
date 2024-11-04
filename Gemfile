@@ -5,7 +5,6 @@ gem "jekyll", "~> 4.3.4"
 gem "minimal-mistakes-jekyll"
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
   gem "jekyll-sass-converter", "~> 2.2"
 end
 platforms :mingw, :x64_mingw, :mswin, :jruby do
