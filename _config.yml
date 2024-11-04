@@ -6,13 +6,15 @@ description: >-
 baseurl: ""
 url: "https://musoftware.net"
 github_username:  hamasho
+defaults:
+  - scope:
+      path: ""
+    values:
+      noindex: true
 
 # Build settings
 theme: minimal-mistakes-jekyll
 plugins: []
-
-header:
-  image: /assets/images/top.jpeg
 
 # Exclude from processing.
 # The following items will not be processed, by default.

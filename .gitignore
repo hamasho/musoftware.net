@@ -5,3 +5,5 @@ _site
 vendor
 
 original_repo
+
+.DS_Store
