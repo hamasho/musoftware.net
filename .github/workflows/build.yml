@@ -18,10 +18,7 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.3'
-        bundle-cache: true
-    - name: Install dependencies
-      run: |
-        bundle install
+        bundler-cache: true
     - name: Setup Pages
       uses: actions/configure-pages@v3
     - name: Build site
@@ -34,6 +31,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
