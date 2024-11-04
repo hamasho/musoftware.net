@@ -6,11 +6,6 @@ description: >-
 baseurl: ""
 url: "https://musoftware.net"
 github_username:  hamasho
-defaults:
-  - scope:
-      path: ""
-    values:
-      noindex: true
 
 # Build settings
 theme: minimal-mistakes-jekyll
