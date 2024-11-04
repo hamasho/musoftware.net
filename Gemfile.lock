@@ -95,12 +95,8 @@ GEM
     webrick (1.9.0)
 
 PLATFORMS
-  aarch64-mingw-ucrt
   arm64-darwin
   ruby
-  x86-cygwin
-  x86-mingw-ucrt
-  x86_64-cygwin
   x86_64-darwin
 
 DEPENDENCIES
