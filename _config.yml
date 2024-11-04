@@ -9,7 +9,7 @@ github_username:  hamasho
 
 # Build settings
 theme: minimal-mistakes-jekyll
-plugins:
+plugins: []
 
 # Exclude from processing.
 # The following items will not be processed, by default.
