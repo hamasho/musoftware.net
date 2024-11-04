@@ -15,20 +15,19 @@ jobs:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.3'
         bundle-cache: true
-
+    - name: Install dependencies
+      run: |
+        bundle install
     - name: Setup Pages
       uses: actions/configure-pages@v3
-      
     - name: Build site
       run: bundle exec jekyll build
       env:
         JEKYLL_ENV: production
-        
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
 
